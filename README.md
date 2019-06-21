@@ -1,7 +1,7 @@
 # Garbage-Collection-System
 A Simple Online Platform to link house tenants with garbage collectors
 ----------------------------------------------------------
-Feel free top create your own users and companies
+Feel free to create your own Users and Companies
 ----------------------------------------------------------
 Super Admin Credentials ->
 
