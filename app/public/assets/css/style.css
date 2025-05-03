@@ -1,0 +1,390 @@
+﻿/* General Styles */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --success-color: #2ecc71;
+    --danger-color: #e74c3c;
+    --warning-color: #f1c40f;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --border-radius: 4px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: #f8f9fa;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white !important;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+/* Forms */
+.form-control {
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1.5rem;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+/* Modals */
+.modal-content {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+/* Alerts */
+.alert {
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* Company List */
+.list-group-item {
+    border-radius: var(--border-radius);
+    margin-bottom: 0.5rem;
+    transition: var(--transition);
+}
+
+.list-group-item:hover {
+    background-color: var(--light-color);
+}
+
+.list-group-item.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.label {
+    padding: 0.3rem 0.6rem;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+}
+
+/* Slider */
+.mi-slider {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+    
+    .modal-dialog {
+        margin: 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: var(--border-radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}
+
+/* Form Validation */
+.is-invalid {
+    border-color: var(--danger-color) !important;
+}
+
+.invalid-feedback {
+    color: var(--danger-color);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Loading Spinner */
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--secondary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.text-center {
+    text-align:center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Open Sans', sans-serif;
+}
+.alg-right-pad {
+    float:right;
+    padding-right:20px;
+}
+a:hover {
+    text-decoration:none;
+}
+
+/*=======================================
+  NAVBAR ADJUSTMENTS
+==================================================*/
+.navbar-brand {
+font-size: 25px;
+padding: 15px 80px 15px 60px;
+}
+.navbar-default .navbar-brand {
+color: #000000;
+}
+.navbar-default {
+background-color: #000000;
+border-color: #000000;
+}
+.navbar {
+ border-radius: 0px; 
+}
+.navbar-default .navbar-nav > li > a {
+color: #FFF;
+}
+.navbar-default .navbar-nav > li > a:hover {
+color: #FFF;
+}
+
+.navbar-default .navbar-brand {
+color: #FFFFFF;
+}
+.navbar-default .navbar-brand:hover {
+color: #FFFFFF;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+color: #050505;
+background-color: #FFFFFF;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+color: #000;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+color: #000;
+}
+/*=======================================
+  BOOTSTRAP ADJUSTMENTS
+==================================================*/
+.row {
+    margin-bottom:10px;
+}
+.btn {
+    margin-bottom:5px;
+}
+/*=======================================
+  INDEX PAGE
+==================================================*/
+
+.box-border {
+    border:1px solid #e1e1e1;
+}
+
+.product-box h3>a,.product-box h3>a:hover,.product-box h3>a:focus {
+    color:#000;
+    text-decoration:none;
+}
+
+.offer-box {
+background-color: #6A75F0;
+border: 1px solid #096FC0;
+color: #fff;
+font-weight: 900;
+font-size:16px;
+}
+    .offer-box a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .offer-box a:hover {
+        color:#000;
+    }
+.list-group a {
+   
+    font-size:14px;
+    font-weight:900;
+    color:#808080;
+}
+.list-group a:hover {
+     color:#000;
+    text-decoration:none;
+}
+.offer-colors {
+   background-color: #B05FDD;
+border: 1px solid #A228F3;
+}
+
+.download-app-box {
+    background-color: #069E98;
+border: 1px solid #0FAA8B;
+padding:30px;
+line-height:40px;
+font-size:25px;
+font-weight:900;
+color:#fff;
+}
+/*=======================================
+  SLIDER main-style.css Changes
+==================================================*/
+.mi-slider {
+margin-top: 0px;
+}
+
+.offer-text
+{
+position: absolute;
+color: #FFF;
+padding: 14px 16px 12px 16px;
+margin-top: 10px;
+background-color:#18b424;
+
+}
+.offer-text2
+{
+position: absolute;
+color: #FFF;
+padding: 14px 16px 12px 16px;
+margin-top: 10px;
+background-color:#EB0429;
+
+}
+/*=======================================
+  FOOTER SECTION
+==================================================*/
+.footer-box {
+    background-color:#F5F5F5;
+    padding:20px 50px 20px 50px;
+    
+    
+}
+.small-box {
+    font-size:10px;
+}
+
+.footer-box a {
+    color:#808080;
+    text-decoration:none;
+}
+.footer-box a:hover {
+    color:#000;
+}
+.pad-botom {
+    padding-bottom:30px;
+}
+.footer-box p {
+    padding-top:15px;
+    padding-bottom:15px;
+    line-height:25px;
+}
+.social-box a{
+     color:#333436;
+    text-decoration:none;
+}
+
+.end-box {
+    padding:20px;
+     color:#fff;
+     background-color:#000;
+     font-size:14px;
+}
