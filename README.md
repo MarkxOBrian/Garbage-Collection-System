@@ -29,12 +29,6 @@
 ![Mobile View](docs/screenshots/mobile-view.png)
 *Fully responsive design that works on all devices*
 
-> 💡 **Note**: To add actual screenshots:
-> 1. Create a `docs/screenshots` directory
-> 2. Add your screenshots in PNG format
-> 3. Name them as shown above
-> 4. Update the paths in this README
-
 ## ✨ Features
 
 - 👥 **User Management** - Admin, Companies, and Regular Users
